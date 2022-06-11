@@ -1,0 +1,1470 @@
+/*
+En este CSS vamos a meter todos los media quary y puntos de corte
+*/
+
+
+/* 1er punto de corte 1180px*/
+
+@media(max-width:1180px){
+    .wrap {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .card{
+        width: 17%;
+        margin-left: 15px;
+    }
+
+    /* SIMBOLO DE PASSWORD DEL ASIDE*/
+    #login #password{
+        
+        margin-top: 23px;
+        margin-left: 16px;
+    }
+
+        /* LOGIN BUTTONS */
+    #login input[type="submit"],
+    #login input[type="reset"]{
+
+        margin:0px;
+        margin-top: 18px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    /* INPUTS DE LOGIN Y PASSWORD*/
+    #login input[type="email"],
+    #login input[type="password"]{
+        width: 83%;
+        height: 28px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 2px #ccc inset;
+        margin-left: 7px;
+        padding-left: 25px;
+        outline: none;
+    }
+
+    /* CAJAS DEL FOOTER*/
+    footer #lista,
+    footer #mapa,
+    footer #datos{
+    width: 28.5%;
+    margin-left: 5px;
+    }
+
+    /* IMAGENES DEL FOOTER*/
+    #images img{
+        width: 42px;
+    }
+
+    /* Punto de corte para fondo del banner*/
+    #banner {
+        width: 95.6%;
+        background-position: -386px -200px;
+        
+      }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2do Punto de corte*/
+@media(max-width:1147px){
+    .wrap {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .card{
+        width: 25%;
+        margin-left: 50px;
+    }
+
+    #cardredes{
+        margin-left: 202px;
+    }
+    #cardbases{
+
+        margin-left: 56px;
+    }
+
+    
+}
+
+/* Punto de corte para fondo del banner*/
+@media(max-width:1120px){
+    #banner {
+        width: 95.6%;
+        background-position: -435px -200px;
+        
+      }
+
+}
+
+
+
+
+/* AJUSTE DE IMAGENES Y CAJAS DE FOOTER*/
+@media(max-width:1061px){
+
+    footer #lista, footer #mapa, footer #datos {
+        width: 29.5%;
+        margin-left: -8px;
+       
+    }
+
+    #images img{
+        width: 35px;
+    }
+
+    #piepagina .titlefooter {
+
+        font-size: 35px;
+      }
+}
+
+
+
+
+
+/* 3er Punto de corte*/
+@media(max-width:1055px){
+    .wrap {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .article .date {
+        display: block;
+        float: right;
+        width: 35%;
+    }
+
+    #login input[type="email"], 
+    #login input[type="password"] {
+        width: 79%;
+
+    }
+}
+
+
+/* Enlaces de LOGIN*/
+@media(max-width:1026px){
+    #login a {
+        font-size: 14PX;
+      }
+}
+
+
+
+/* 4to Punto de corte*/
+@media(max-width:1016px){
+ 
+    #articles .article {
+
+        height: 200px;
+    }
+}
+
+
+
+/* Punto de corte para fondo del banner*/
+@media(max-width:1004px){
+    #banner {
+        width: 95.6%;
+        background-position: -537px -200px;
+        
+      }
+
+      #aside #search input[type="text"] {
+      
+        margin-left: 17px
+    }
+}
+
+/* 6to Punto de corte*/
+@media(max-width:959px){
+
+    #redes {
+        width: 84%;
+        margin-left: 11px;
+        font-size: 24px;
+    }
+    #redes .twitter,
+    #redes .facebook,
+    #redes .youtube{
+    margin: 10px;
+    margin-top: 35px;
+    }
+}
+
+
+
+/* Punto de corte para fondo del banner*/
+@media(max-width:940px){
+    #banner {
+        width: 95.6%;
+        background-position: -595px -200px;
+        
+      }
+}
+
+
+
+/* 5to Punto de corte ARTICULOS Y EL DATE*/
+@media(max-width:930px){
+ 
+    #articles .article {
+        width: 90%;
+        height: 215px;
+    }
+
+    .article .date {
+        display: block;
+        float: right;
+        width: 37%;
+    }
+}
+
+/* Enlaces de LOGIN*/
+@media(max-width:915px){
+    #login p {
+        text-align: left;
+        margin-left: 6px;
+      }
+    
+}
+
+/* 6to Punto de corte*/
+@media(max-width:885px){
+
+    #aside h3{
+        font-size: 19px;
+        letter-spacing: 3px;
+    }
+}
+
+
+/* Punto de corte para fondo del banner*/
+@media(max-width:880px){
+    #banner {
+        width: 95.6%;
+        background-position: -640px  -200px;
+        
+      }
+
+}
+
+
+
+/* 8vo Punto de corte*/
+@media(max-width:879px){
+    .card {
+        width: 25%;
+        margin-left: 42px;
+      }
+
+    #cardredes {
+        margin-left: 160px;
+      }
+
+    .article .date {
+        width: 37%;
+        height: 47px;
+        line-height: 14px;
+    }
+
+    #login input[type="email"], 
+    #login input[type="password"] {
+         width: 74%;
+    }
+
+    /* Enlaces de LOGIN*/
+     #login a {
+        font-size: 13PX;
+    }      
+}
+
+
+
+
+
+
+
+
+/* AJUSTE IMAGENES DE FOOTER*/
+@media(max-width:866px){
+    #images img{
+        width: 30px;
+    }
+
+    #piepagina .titlefooter {
+        font-size: 30px;
+    }
+       
+}
+
+
+
+/* AJUSTE POP UP REDES SOCIALES Y BOTON DE BLOG*/
+@media(max-width:849px){
+
+    #redes .overlay {
+        width: 69px;
+       font-size: 13px;
+       text-align: center;
+    }
+
+    #blog {
+        margin-left: 120px;
+    }
+
+    #datos img {
+       width: 200px;
+      }
+
+    #images img {
+        width: 30px;
+    }
+}
+
+
+
+/* Punto de corte para fondo del banner*/
+@media(max-width:826px){
+    #banner {
+        width: 95.6%;
+        background-position: -692px  -200px;
+        
+      }
+
+}
+
+@media(max-width:799px){ 
+   
+
+    #piepagina .titlefooter {
+        font-size: 27px;
+      }
+
+      #mapa iframe {
+        
+        height: 273px;
+      }
+
+      .card p {
+
+        font-size:89%;
+        text-align: center;
+        color: #0278c7;
+        margin-top: 30px;
+        font-family: 'TrebuchetMS';
+        transition: all 300ms;
+      }
+
+}
+
+
+
+
+/* Ajuste de tarjetas, imagenes input de login y la caja de login*/
+@media(max-width:773px){
+    .card {
+        width: 25%;
+        margin-left: 35px;
+      }  
+
+      #datos img {
+        width: 216px;
+      }
+
+      #images img {
+        width: 30px;
+      }
+
+      #login input[type="submit"], 
+      #login input[type="reset"] {
+        margin-top: 18px;
+        margin-left: 20px;
+    }
+
+    #login {
+        width: 99%;
+        margin-left: 0px;
+        
+    }
+
+    /* Enlaces de LOGIN*/
+    #login a {
+        font-size: 12PX;
+    }
+}
+
+
+
+@media(max-width:762px){
+    #banner {
+        width: 95.6%;
+        background-position: -750px  -200px;
+        
+    }
+
+    #redes .overlay {
+        width: 59px;
+        font-size: 11px;
+        margin-left: 37px;
+      }
+
+      #aside #search input[type="text"] {
+        width: 80%;
+        margin-left: 6px;
+      }
+}
+
+@media(max-width:753px){ 
+   
+
+      #images img {
+        width: 25px;
+      }
+
+      #mapa iframe {
+        height: 269px;
+    }
+}
+
+
+@media(max-width:731px){ 
+   
+    #piepagina .titlefooter {
+        font-size: 23px;
+        height: 40px;
+        line-height: 2;
+      }
+
+      #mapa iframe {
+        height: 216px;
+    }
+
+    #datos img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+}
+
+
+@media(max-width:723px){ 
+    #nav ul li {
+        font-size: 23px;
+        margin: 0px 10px 0px 10px;
+      }
+
+      #banner h1 {
+        font-size: 40px;
+      }
+
+      #banner {
+        background-position: -784px -200px;
+    }
+
+    #datos img {
+        width: 195px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #images img {
+        width: 25px;
+      }
+
+      #mapa iframe {
+        height: 217px;
+    }
+
+    #piepagina{
+        padding-top: 18px;
+        padding-left: 30px;
+    }
+}
+
+
+@media(max-width:710px){
+    .parrafo {
+        font-size: 14px;
+      }
+
+      .date p {
+        font-size: 13px !important;
+      }
+
+      #articles .article {
+        
+        height: 223px;
+      }
+}
+
+
+@media(max-width:695px){
+    
+    #piepagina .titlefooter {
+        font-size: 21px;
+        height: 38px;
+        line-height: 2;
+        width: 178px;
+      }
+
+      #lista ul {
+        margin-left: 23px;
+        margin-top: 20px;
+        font-size: 22px;
+      }
+
+      #lista ul li a {
+
+        font-size: 20px;
+      }
+
+      footer #lista, 
+      footer #mapa,
+       footer #datos {
+        width: 29.5%;
+        margin-left: -14px;
+      }
+}
+
+
+@media(max-width:679px){
+    
+    .card {
+        width: 29%;
+        margin-left: 8px;
+      }
+
+      #cardredes {
+        margin-left: 97px;
+      }
+
+      #aside h3 {
+        font-size: 17px;
+        
+      }
+
+      #login input[type="submit"], 
+      #login input[type="reset"] {
+        margin-top: 18px;
+        margin-left: 11px;
+        margin-bottom: 10px;
+      }
+    
+}
+
+
+@media(max-width:662px){
+
+  footer #lista, 
+  footer #mapa, 
+  footer #datos {
+    margin-top: 13%;
+    margin-left: -2%;
+    
+  }
+
+      #login a {
+        font-size: 68%;
+      }
+}
+
+
+
+@media(max-width:650px){
+    
+    #banner {
+        background-position: -851px -200px;
+      }
+
+      #banner h1 {
+        font-size: 32px;
+        margin-top: 29px;
+      }
+
+      #cardredes {
+        margin-left: 90px;
+      }
+
+      #sponsors {
+        
+        margin-left: 17px;
+      }
+}
+
+
+
+
+
+
+
+@media(max-width:640px){
+    
+    #images img {
+        width: 20px;
+      }
+
+      #piepagina .titlefooter {
+        font-size: 21px;
+        height: 33px;
+        line-height: 1.5;
+        width: 178px;
+      }
+
+      #mapa iframe {
+        height: 198px;
+        margin-left: 4px;
+      }
+
+      #autor span {
+     
+        font-size: 12px;
+      }
+
+      footer #lista, 
+      footer #mapa, 
+      footer #datos {
+        margin-top: 15%;
+        margin-left: -2%;
+        
+      }
+
+      #login a {
+        font-size: 68%;
+      }
+
+      #login input[type="submit"], 
+      #login input[type="reset"] {
+        margin-left: 10%;
+        font-size: 66%;
+      }
+
+      #aside h3 {
+        font-size: 110%;
+        letter-spacing: 2px;
+      }
+}
+
+
+@media(max-width:623px){
+  #nav ul li a {
+    font-size: 98%;
+  }
+
+  #nav ul li {
+    font-size: 18px;
+  }
+
+  #logo {
+    
+    width: 27%;
+  }
+
+  #logo h3 {
+    
+    font-size: 237%;
+    margin-right: 39px;
+  }
+
+  #logo .gear {
+    
+    margin-left: 11%;
+
+  }
+
+  .card {
+    width: 20%;
+    margin-left: -8px;
+  }
+
+  #cardbases {
+    margin-left: 0px;
+  }
+
+  #cardredes {
+    margin-left: 0px;
+  }
+  
+
+  .card {
+    width: 17%;
+    height: 57%;
+    margin-right: 12px;
+    margin-left: 0px;
+  
+  }
+  
+  .card:first-child {
+    
+    margin-left: 17px;
+  
+  }
+  .card .icon {
+    font-size: 24px;
+    
+  }
+  
+  .card h2{
+    
+    margin-top: 29px;
+    font-size: 12px;
+    text-shadow: none;
+  }
+  
+  .card p{
+    font-size: 47%;
+    margin-top: 24px;
+  }
+  
+  .card:hover .description {
+    font-size: 47%;
+  }
+  
+  .card:hover .icon {
+    font-size: 24px;
+    
+  }
+
+  #login input[type="email"], 
+  #login input[type="password"] {
+    width: 70%;
+  }
+
+
+  #articles {
+    width: 75%;
+    margin-top: 20px;
+  }
+
+  #articles .article {
+    height: 180px;
+  }
+
+  .parrafo {
+    font-size: 12px;
+  }
+
+  .article .date {
+    width: 33%;
+    height: 40px;
+    line-height: 14px;
+  }
+
+  .date p {
+    font-size: 11px !important;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  #aside {
+    
+    margin-top: 0px;
+    
+  }
+
+  #cards {
+    
+    margin-bottom: -71px;
+  }
+
+
+  #redes {
+    width: 94%;
+    margin-left: 3px;
+    font-size: 24px;
+  }
+
+
+  #sponsors {
+    width: 86%;
+    height: 189px;
+    margin-left: 9px;
+  }
+
+
+  #articles #encabezadoarticulos {
+    
+    height: 64px;
+  }
+
+  #articles #encabezadoarticulos h2 {
+    
+    font-size: 34px;
+    line-height: 18px;
+  }
+
+  #blog {
+    width: 84%;
+    height: 128px;
+  }
+
+  #blog a {
+    
+    margin-top: 38px;
+    
+  }
+}
+
+
+@media(max-width:610px){
+
+  #logo {
+    width: 22%;
+  }
+  #logo h3 {
+    font-size: 185%;
+    margin-right: 28px;
+  }
+
+  #nav{
+    margin-right: 31px;
+  }
+
+  #logo .gear {
+    
+    font-size: 19px;
+  }
+
+  
+  #piepagina .titlefooter {
+    font-size: 16px;
+    height: 33px;
+    line-height: 2.2;
+    width: 150px;
+  }
+
+  footer #lista, 
+  footer #mapa, 
+  footer #datos {
+    margin-top: 15%;
+    margin-left: 0%;
+    margin-right: 8px;
+  }
+
+  footer #lista{
+    margin-left: 2%;
+  }
+
+  #lista ul li {
+  
+    width: 71%;
+  }
+
+  #lista ul {
+    margin-left: 23px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #lista ul li a {
+    font-size: 16px;
+  }
+
+  #mapa iframe {
+    height: 198px;
+    margin-left: -6px;
+  }
+
+  #datos img {
+    width: 161px;
+    
+  }
+
+  #images img {
+    width: 20px;
+  }
+
+}
+
+
+
+@media(max-width:585px){
+
+  #header {
+    width: 100%;
+    height: 101px;
+    padding-top: 10px;
+  }
+
+  #logo {
+    float: none;
+    width: 22%;
+    margin: 0px auto;
+  }
+
+  #logo h3 {
+    
+    margin-right: 22px;
+  }
+
+  #nav {
+    float: none;
+    height: 70px;
+    clear: both;
+    margin-right: 0px;
+  }
+
+  #nav ul{
+    width:62%;
+    margin: 0px auto;
+  }
+
+  #nav ul li:first-child {
+    margin-left: 12%;
+  }
+
+  #nav ul li a {
+    font-size: 100%;
+  }
+
+  .wrap {
+    width: 95%;
+    margin: 0px auto;
+  }
+
+  #cards {
+    
+    height: 143px;
+  }
+
+  .card .description{
+    display: none;
+  }
+
+  .card{
+    height: 132px;
+    margin-top: 10px;
+  }
+
+  #aside {
+    float: none;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+
+  }
+
+  #aside h3 {
+    font-size: 110%;
+    letter-spacing: 2px;
+    width: 87%;
+    margin: 0px auto;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    padding-left: 18px;
+    line-height: 30px;
+  }
+
+  #aside #search input[type="text"] {
+    width: 72%;
+    margin-left: 50px;
+  }
+
+  #login,
+  #redes,
+  #sponsors {
+    width: 84%;
+    height: 220px;
+    margin: 0px auto;
+  }
+
+  #login form {
+    width: 100%;
+    height: 80%;
+  }
+
+  #login input[type="email"], 
+  #login input[type="password"] {
+    margin-left: 67px;
+  }
+
+  #login #user{ 
+    margin-left: 73px;
+    
+  }
+
+  #login #password{
+    margin-left: 75px;
+  }
+
+  #login input[type="submit"], 
+  #login input[type="reset"] {
+    margin-left: 10%;
+    font-size: 82%;
+    width: 18%;
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+
+  #login a {
+    font-size: 90%;
+    margin-left: 62px;
+  }
+
+
+  #redes {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  #redes .twitter, 
+  #redes .facebook, 
+  #redes .youtube {
+    margin-top: 25px;
+    margin-left: 20px;
+  
+  }
+
+  #redes .overlay {
+    width: 116px;
+    font-size: 20px;
+    margin-left: 100px;
+    height: 5%;
+    line-height: 150%;
+  
+  }
+
+  #articles #encabezadoarticulos {
+    
+    margin: 0px auto;
+    width: 98%;
+  }
+
+
+  #articles {
+    width: 100%;
+    margin-top: 10px; 
+  }
+
+  #articles .article {
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+
+  #blog {
+    width: 93%;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+
+  footer {
+    width: 100%;
+    
+  }
+
+  .article .date {
+    width: 100%;
+    height: 40px;
+    border-bottom-left-radius: 0px;
+    float: none;
+  }
+  
+  .article h3 {
+    display: block;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .date p {
+    font-size: 12px !important;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px auto;
+    width: 50%;
+  }
+
+  .article .date {
+    line-height: 37px;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 870px;
+  }
+
+
+  #piepagina {
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+
+  .wrap {
+    width: 98%;
+    margin: 0px auto;
+  }
+
+  footer #lista, 
+  footer #mapa, 
+  footer #datos {
+    width: 100%;
+    margin: 0px auto;
+    height: 300px;
+  }
+
+  #piepagina .titlefooter {
+    font-size: 25px;
+    height: 33px;
+    line-height: 1.4;
+    width: 100%;
+  }
+
+  #lista ul {
+    margin-left: 23px;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+    margin: 0px;
+  }
+
+  footer #lista{
+    height: 230px;
+  }
+
+  #lista ul li {
+    width: 90%;
+    margin: 0px auto;
+    list-style: none;
+    margin-top: 23px;
+  }
+
+  #lista ul li a {
+    width: 90%;
+    transition: 600ms;
+  
+  }
+
+  #lista ul li:hover a{
+    transform: scale(.5,.5);
+    border-bottom: 0px;
+    margin-left: 40px;
+  }
+
+  #mapa iframe {
+    height: 84%;
+    width: 80%;
+  }
+
+  #datos img {
+    width: 45%;
+  }
+
+  #images img {
+    width: 50px;
+  }
+
+  #autor span {
+    font-size: 20px;
+    margin-top: 27px;
+  }
+
+}
+
+@media(max-width:523px){
+
+
+  #cards{
+    
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .card:first-child {
+    margin-left: 87px;
+  }
+
+  .card,
+  #cardredes,
+  #cardbases {
+    height: 207px;
+    width: 65%;
+    margin: 0px;
+    text-align: center;
+    margin-left: 87px;
+    margin-top: 25px;
+
+  }
+  ajustar header cartas, banner y alos input de login
+
+  .card h2,
+  .card .description {
+    display: contents ;
+    font-size: 15px;
+    display: block;
+    margin-top: 15px;
+  }
+
+  .card h2 {
+    font-size: 23px;
+  }
+
+  .card .icon {
+    font-size: 35px !important;
+  }
+
+  .card:hover .icon {
+    font-size: 35px;
+    
+  }
+
+  .card:hover .description {
+    font-size: 15px;
+    
+  }
+
+  #header {
+    height: 133px;
+  }
+
+  #nav ul {
+    width: 80%;
+    margin: 0px auto;
+    height: 72px;
+  }
+
+  #nav ul li:first-child {
+    margin-left: 15%;
+  }
+
+  #nav ul li a {
+    font-size: 19px;
+    margin-top: 8px;
+  }
+
+  #logo {
+    width: 28%;
+    height: 48px;
+  }
+
+  #logo .gear {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+
+  #logo h3 {
+    font-size: 207%;
+    margin-right: 26px;
+    margin-top: 6px;
+  }
+
+  #banner {
+    width: 89.6%;
+    background-position: -750px -200px;
+  }
+
+  #banner h1 {
+    font-size: 28px;
+    margin-top: 35px;
+  }
+
+  #banner {
+    background-position: -993px -200px;
+  }
+
+  #redes .overlay {
+    
+    line-height: 210%;
+  }
+
+}
+
+@media(max-width:466px){
+
+
+  #banner {
+    width: 82.6%;
+    height: 100px;
+    background-position: -1020px  -200px;
+  }
+
+  #banner h1 {
+    font-size: 20px ;
+    margin-top: 41px;
+  }
+
+  #login input[type="email"], 
+  #login input[type="password"] {
+    margin-left: 32px;
+  }
+
+  #login #user{
+    margin-left: 37px;
+  }
+
+  #login #password{
+    margin-left: 40px;
+  }
+
+}
+
+
+
+
+@media(max-width:457px){
+
+  #banner {
+    width: 82.6%;
+    height: 100px;
+    background-position: -1024px -200px;
+  }
+
+  #logo {
+    width: 37%;
+    height: 48px;
+  }
+
+  #logo h3 {
+    margin-right: 17px;
+  }
+
+  #nav ul {
+    width: 100%;
+    margin: 0px auto;
+    height: 72px;
+  }
+
+  #nav ul li:first-child {
+    margin-left: 18%;
+  }
+
+}
+
+@media(max-width:364px){
+
+  #logo:hover {
+    border-radius: 2px;
+    color: black;
+    background-color: #ccc;
+  }
+
+  #nav ul li:first-child {
+    margin-left: 11%;
+  }
+
+  #banner h1 {
+    font-size: 15px;
+    margin-top: 43px;
+  }
+
+  #banner {
+    width: 82.6%;
+    height: 100px;
+    background-position: -1105px -200px;
+  }
+
+  .card:first-child {
+    margin-left: 65px;
+  }
+
+  .card, 
+  #cardredes, 
+  #cardbases {
+    margin-left: 65px;
+  }
+
+  #aside #search input[type="text"] {
+    margin-left: 29px;
+  }
+
+  #login a {
+    font-size: 90%;
+    margin-left: 26px;
+  }
+
+  .date p {
+    font-size: 11px !important;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px auto;
+    width: 84%;
+  }
+
+}
+
+
+  
+
+
+/*
+@media(max-width:457px){
+
+  #logo {
+    margin:0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 39%;
+    height: 51px;
+  }
+
+  #logo h3 {
+    
+    margin-right: 39px;
+  }
+
+  #nav ul {
+    width: 54%;
+    margin: 0px;
+  }
+
+  #nav ul li{
+    margin:0px;
+    line-height: 60px;
+    margin-right: 5px;
+    
+  }
+
+  #nav ul li a {
+    font-size: 14px;
+    margin-top: 3px;
+  }
+
+  #nav ul li:first-child {
+    margin-left: 6%;
+  }
+
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

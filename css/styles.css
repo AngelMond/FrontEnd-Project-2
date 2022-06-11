@@ -1,0 +1,1107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(../img/pattern.png);  
+    
+}
+
+/* Fuentes*/
+
+@font-face{
+    font-family: "TrebuchetMS" ;
+    src: url('../css/fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "BebasNeue" ;
+    src: url('../css/fonts/BebasNeue.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "WebSymbolsRegular" ;
+    src: url('../css/fonts/websymbols-regular-webfont.eot');
+    src: url('../css/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../css/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ESTILOS GENERALES*/
+
+.gear{
+    font-family: "WebSymbolsRegular";
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+
+/*CABECERA*/
+#header{
+
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: 'BebasNeue';
+    color: white;
+}
+
+
+
+#logo{
+    float: left;
+    width: 200px;
+    background-color: #37bcf9;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+#logo .gear{
+    display: block;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 26px;
+
+                            /* Animación Engrane*/
+                            animation-name: rotate-gear;
+                            animation-duration: 2s;
+                            animation-iteration-count: infinite;
+                            animation-timing-function: linear;
+                        }
+
+
+                        /* Animación Engrane*/
+                        @keyframes rotate-gear{
+                            from{
+                                transform: rotateZ(0deg);
+                            }
+                            to{
+                                transform: rotateZ(360deg);
+                            }
+                        }
+
+
+                        /* Animación de BLOG*/
+                        #logo:hover{
+                            border-radius: 2px;
+                            color: black;
+                            background-color: #ccc;
+                        }
+
+
+                        /* Animacion de engrane*/
+                        #logo:hover .gear{
+                            animation: fromBellow 500ms linear;
+                        }
+
+                        @keyframes fromBellow{
+                            0%{
+                                transform: translateY(0%);
+                            }
+                            50%{
+                                transform: translateY(200%) ;
+                            }
+                            100%{
+                                transform: translateY(0%);
+                            }
+                        }
+
+
+
+#logo h3{
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 65px;
+}
+
+                            /* Animacion  de BLOG*/
+
+                            #logo:hover h3{
+                                animation: fromRight 300ms linear;
+                            }
+
+                            @keyframes fromRight{
+                                from{
+                                    transform: translateX(200%);
+                                }
+                                to{
+                                    transform: translateX(0%);
+                                }
+                            }
+
+
+
+
+/* MENU DE NAVEGACIÓN */
+
+#nav{
+    float: right;
+    height: 70px;
+    
+}
+
+#nav ul li{
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#nav ul li a{
+    display: block;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+#nav ul li a:hover{
+   
+    color: #37bcf9 ;
+    transform:scale(1.2,1.2) ;
+}
+
+
+/* BANNER*/
+
+#banner{
+    width: 95.6%;
+    margin: 20px auto;
+    height: 100px;
+    border: 10px solid #FFFFFF ;
+    background:url(../img/bakbaner.png);
+    background-position: -255px -200px;
+    box-shadow: 0px 0px 2px gray;
+
+
+
+                                /*Animacion donde el fondo del banner se va a mover*/
+                                animation: backBanner 6s linear;
+                                overflow: hidden;  /* Este es muy impprtante de usar para las animaciones*/
+
+                            }
+
+                            /* Keyframe  Banner*/
+                            @keyframes backBanner{
+                                0%{
+                                    background-position: 0px 0px;
+                                }
+                                100%{
+                                    background-position: -255px -200px;
+                                }
+                            }
+
+#banner h1{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+    margin: 23px auto;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+
+    
+
+                            /* Parámetros de animación de las letras del h1*/
+                            animation: showText 6s linear;
+                        }    
+
+                        /* Keyframes del animacion de h1*/
+
+                        @keyframes showText{
+
+                            0%{
+                                transform: translateX(-600%) scale(5,5);
+                                opacity: 1;
+                            }
+                            50%{
+                                transform: translateX(600%) scale(5,5);
+                                opacity: 1;
+                            }
+                            75%{
+                                transform: translateX(-600%) scale(5,5);
+                                text-shadow: none;
+                                color: transparent;
+                                opacity: 0; /* Con esto el text se va a ir desvaneciendo*/
+                            }
+                            100%{
+                                transform:  translateX(0%) scale(1,1);
+                                text-shadow: 2px 2px 1px black;
+                                color: white;
+                                opacity: 1;
+
+                            }
+                        }
+                        /* Fin de Keyframes del animacion de h1*/
+
+
+
+
+/* TARJETAS*/
+#cards{
+    width: 100%;
+    height: 350px;
+    
+    
+}
+
+.card{
+    width: 208px;
+    height: 305px;
+    float: left;
+    background: white;
+    box-shadow: 1px 1px 2px gray;
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: all 300ms;
+}
+
+
+
+                        /* Cambio del fondo de las tarjetas*/
+                        .card:hover{
+                            background: black;
+                            
+                        }
+
+                        /* Cambio de color del icono de las tarjetas*/
+                        .card:hover .icon{
+                            color: #37bcf9;
+                            font-size: 70px;
+                            animation: showIcon 300ms linear;
+                        }
+
+
+                        /* Keyframes de Icono de las tarjetas*/
+                        @keyframes showIcon{
+                            from{
+                                transform: translateY(-200%);
+                            }
+                            to{
+                                transform: translateY(0%);
+                            }
+                        }
+
+
+
+.card .icon{
+    display: block;
+    width: 100%;
+    font-family: 'WebSymbolsRegular';
+    font-size: 50px;
+    color: black;
+
+    transition: all 300ms;
+}
+
+.card h2{
+    width: 100%;
+    text-align: center;
+    color: #00538C;
+    text-shadow: 0px 0px 1px black;
+    margin-top: 50px;
+    font-size: 21px;
+    font-family: 'TrebuchetMS';
+
+    transition: all 300ms;
+    
+}
+
+
+                        /* Transiciones de los h2 de las tarjetas*/
+
+                        .card:hover .category{
+                            color: white;
+                            animation: showCategory 450ms linear;
+                        }
+
+                        /* Keyframes de h2 de tarjetas*/
+
+                        @keyframes showCategory{
+                            from{
+                                transform: translateY(-300%);
+                                color: black;
+                            }
+                            to{
+                                transform: translateY(0%);
+                                color: white;
+                            }
+                        }
+
+
+
+/* Márgenes de las etiquetas <p> dentro de las tarjetas*/
+.card p{
+    text-align: center;
+    color: #0278c7;
+    margin-top: 30px; 
+    font-family: 'TrebuchetMS';
+
+    transition: all 300ms;
+}
+
+
+
+
+                    /* Animación del texto de las cartas*/
+                    .card:hover .description{
+                        color: white;
+                        animation: showDescription 500ms linear;
+                    }
+
+                    /* Keyframes de texto de las cartas*/
+
+                    @keyframes showDescription{
+                        from{
+                            transform: translateX(-300%);
+                            color: black;
+                        }
+                        to{
+                            transform: translateX(0%);
+                            color: white;
+                        }
+                    }
+
+
+/* ASIDE */
+
+#aside{
+    float: right;
+    width: 25%;
+    margin-top: 87px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 1100px;
+}
+
+/*
+Codigo de victor
+#lateral{
+    width:300px;
+    min-height:1200px;
+    font-family: "TrebuchetMS";
+    float: right;
+*/
+
+/* ESTILOS DE LOS H3 DEL ASIDE */
+#aside h3{
+    width: 90%;
+    height: 35px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px black ;
+    background: rgb(247, 247, 247);
+    background-image: url(../img/pxgray.png);
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-left: 10px;
+    font-family: 'BebasNeue' ;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+/*
+    Codigo de victor
+
+#aside h3{
+    display:block;
+    width: auto;
+    height: 45px;
+    line-heigtht: 46px;
+    background: url('../img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f ; 
+    font-size:30px;
+    font-family:'BebasNeue';
+    font-weight:normal;
+    letter-spacing:2px;
+    padding-left:15px;
+    margin-top:30px;
+    margin-bottom:15px;
+
+ #lateral h3:first-child{
+    marign-top:0px;
+    }
+    
+    */
+
+
+
+
+#aside #search{                                           
+    width: 100%;                                           
+    margin-top: 10px;
+}
+
+/*
+Codigo de victor para el search 
+El ajusta la caja que contiene el input y la lupa para que se queden juntos mas fácil
+es decir, primero el hace a la caja del tamaño exacto y despues ajusta el input y la lupa del 
+mismo tamaño y asi ya quedan juntos
+
+#search{
+    witdh:90%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white3;
+    border-radius: 5px;
+    box-shadow:1px 1px 4px #ccc inset;
+    transition: all 500ms;
+}
+*/
+
+
+
+
+
+/* Formularios de Buscar*/
+#aside #search input[type="text"]{
+    width: 70%;
+    height: 29px;
+    margin-left: 25px;
+    border-end-start-radius: 7px;
+    border-start-start-radius:  7px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #ccc inset;
+    color: rgb(134, 132, 132);
+    transition: all 500ms;
+}
+
+#search input[type="text"]:focus{
+    outline: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(87, 84, 84) !important;
+    box-shadow: 2px 2px 3px grey inset !important;
+    padding-left: 5px;
+}
+
+   
+
+#aside #search input[type="button"]{
+    font-family: 'WebSymbolsRegular';
+    width: 10%;
+    height: 30.6px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-top-right-radius:  7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: -2px 2px 2px #ccc inset;
+    margin-left: -5px;
+    cursor:pointer;
+}
+
+/* Esto es para el simbolo de la lupa y el submit
+#lateral input[type='button'],
+#lateral input[type='submit']{
+    height:30px;
+    cursor:pointer;
+    background-color:transparent;
+    border:none;
+    border-left: 1px solid #ccc;
+    color:#555;
+    padding-left:6px;
+
+#lateral input[type="text"]:focus{
+    color:#555;
+*/
+
+/* LOGIN caja */
+#login{
+
+    width: 90%;
+    height: 240px;
+    border: 1px solid #CCC;
+    box-shadow: -1px 3px 5px 3px #ccc;
+    margin-left: 6px;
+    margin-top: 20px;
+    background: white;
+    margin-bottom: 30px;
+    
+    
+}
+
+#login form{
+    margin-top: 20px;
+}
+
+
+/* INICIO INPUTS DE LOGIN*/
+#login input[type="email"]{
+    width: 85%;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ccc inset;
+    margin-left: 7px;
+    padding-left: 25px;
+    outline: none;
+}
+
+#login input[type="password"]{
+    width: 85%;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ccc inset;
+    margin-left: 7px;
+    margin-top: 20PX ;
+    padding-left: 25px;
+    outline: none;
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+    color: #555;
+    box-shadow: 1px 1px 2px grey inset;
+}
+/* FINAL INPUTS DE LOGIN*/
+
+
+
+/* INICIO SIMBOLOS DE LOS FORMULARIOS*/
+#login #user{
+
+    font-family: 'WebSymbolsRegular';
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 5px;
+    
+ }
+ 
+ #login #password{
+     font-family: 'WebSymbolsRegular';
+     position: absolute;
+     margin-top: 23px;
+     margin-left: 16px;
+     font-size: 20PX;
+ }
+ /* FIN SIMBOLOS DE LOS FORMULARIOS*/
+
+
+
+/* INICIO LOGIN BUTTONS*/
+#login input[type="submit"],
+#login input[type="reset"]{
+    width: 30%;
+    height: 30px;
+    margin: 25px;
+    background: #36ADD8;
+    color: rgb(235, 233, 233);
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#login input[type="submit"]:hover,
+#login input[type="reset"]:hover{
+   color: white;
+   box-shadow: 0px 0px 2px gray;
+}
+
+#login p{
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+#login a{
+    text-decoration: none;
+    color: black;
+}
+
+#login a:hover{
+    text-decoration: underline;
+    color: #2f78bc;
+
+}
+
+/* FIN LOGIN BUTTONS*/
+
+
+
+
+
+/* INICIO REDES SOCIALES*/
+
+#redes{
+    width: 80%;
+    height: 240px;
+    margin-left: 19px ;
+    background: white;
+    border:1px solid #ccc;
+    box-shadow: -1px 3px 5px 3px #ccc;
+    margin-top: 20px ;
+    
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#redes a{
+    font-family: 'WebSymbolsRegular';
+}
+
+
+#redes .twitter,
+#redes .facebook,
+#redes .youtube{
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#redes a{
+    color: black;
+    text-decoration: none;
+}
+
+#redes .overlay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #f4f7fe;
+    font-size: 17px;
+    padding: 5px;
+    position: absolute;
+    margin-left: 47px;
+    margin-top: -33px;
+    cursor: pointer;
+
+
+                    /* Animación de botones de las redes sociales*/
+                    transform: translateX(-80%);
+                    opacity: 0;
+                    transition: all 400ms;
+}
+
+
+                    #redes div:hover .overlay{
+                        transform: translateX(0%);
+                        opacity: 1;
+                    }
+
+
+
+/* FIN REDES SOCIALES*/
+
+
+/*INICIO PATROCINADORES*/
+
+#sponsors{
+    width: 75%;
+    height: 237px;
+    margin-left: 25px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: -1px 3px 5px 3px #ccc;
+    margin-top: 20px;
+}
+/*FIN PATROCINADORES*/
+
+
+
+/*INICIO ARTÍCULOS*/
+    #articles{
+        width: 75%;
+        margin-top: 106px;
+    }
+
+    #articles #encabezadoarticulos{
+        width: 92%;
+        height: 88px;
+        border: 1px solid black;
+        background: rgb(247, 247, 247);
+        background-image: url(../img/pxgray.png);
+        border: 1px solid #ccc;
+        box-shadow: 3px 3px 2px black ;
+
+       
+    }
+
+    #articles #encabezadoarticulos h2{
+        text-align: center;
+        margin-top: 25px;
+        font-family: 'BebasNeue';
+        font-size: 42px;
+        letter-spacing: 4px; 
+    }
+
+    .article .title{
+        width: 100%;
+        height: 42px;
+    }
+
+    #articles .article{
+        width: 90%;
+        height: 173px;
+        background: white;
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 0px 4px #ccc;
+        margin-top: 47px;
+        margin-left: 10px ;
+    }
+
+    .article h3{
+        display: block;
+        float: left;
+        margin-top: 18px;
+        margin-left: 10px;
+        color: #00538C;
+        font-family: 'TrebuchetMS';
+        font-size: 24px;
+    }
+
+    .article .date{
+        display: block;
+        float: right;
+        width: 31%;
+        height: 42px;
+        background: #393D3F;
+        color: white;
+        border-bottom-left-radius: 5px;
+        
+    }
+/* Estilos del parrafo para el date*/
+    .date p{
+        font-size: 15px !important;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+/* Estilos de los párrafos dentro de los articulos*/
+   .parrafo{
+        margin-top: 25px;
+        margin-left: 10px;
+        font-family: 'TrebuchetMS';
+        font-size: 16px;
+   }
+
+   .parrafo a{
+       text-decoration: none;
+       color: #00538C;
+   }
+
+   /* último artículo BOTON IR AL BLOG*/
+
+   #blog{
+    width: 90%;
+    height: 138px;
+    background: white;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 0px 4px #ccc;
+    margin-top: 70px;
+    margin-left: 10px ;
+    cursor: pointer;
+
+
+    text-align: center;
+    color: #00538C;
+    font-family: 'BebasNeue';
+    font-size: 45px;
+    letter-spacing: 2px;
+
+    transition: all 1s;
+
+   }
+
+   #blog a{
+        display: block;
+        margin-top: 44px;
+        text-decoration: none;
+
+        transition: all 1s;
+}
+
+                /* Aimaciones del boton grande de BLOG*/
+
+                #blog:hover{
+                    background-color: #333 ;
+                    border: 10px solid #37bcf9 ;
+                    border-radius: 240px;
+                    box-shadow: 0px 0px 10px gray ;
+
+
+                    /* Animación de colores para boton BLOG*/
+                    animation: blink 7s infinite linear; /* Parámetros de la animación*/
+                }
+                    /* Animación del boton BLOG*/
+                @keyframes blink{
+                    0%{
+                        border: 10px solid #37bcf9;
+                    }
+                    25%{
+                        border: 10px solid green;
+                    }
+                    50%{
+                        border: 10px solid yellow;
+                    }
+                    75%{
+                        border: 10px solid rgb(247, 140, 18);
+                    }
+                    100%{
+                        border: 10px solid #37bcf9;
+                    }
+                }
+
+
+                #blog:hover a{
+                    color: white;
+                    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black;
+                }
+
+
+
+
+/*FIN ARTÍCULOS*/
+
+/* FOOTER*/
+
+footer{
+    width: 100%;
+    height: 470px;
+    background: black;
+    margin-top: 40px;
+}
+
+
+/* Cajas que contiene la lista, mapa etc..*/
+footer #lista,
+footer #mapa,
+footer #datos{
+    display: block;
+    float: left;
+    width: 26.5%;
+    height: 365px;
+    margin-top: 40px;
+    margin-left: 43px;
+    margin-right: 32px;
+    text-align: center;   
+}
+
+/* Estilos de los h5 del footer*/
+#piepagina .titlefooter{
+    width: 100%;
+    height: 50px;
+    background: rgb(247, 247, 247);
+    background-image: url(../img/pxgray.png);
+    font-family: 'BebasNeue';
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 54px;
+    border-radius: 5px;
+}
+
+/* Inicio Estilos de la lista*/
+#lista ul{
+    text-align: left;
+    margin-left: 25px ;
+    margin-top: 20px;
+    color: white;
+    font-size: 27px;
+}
+
+#lista ul li{
+    margin-top: 20px ;
+    border-bottom: 1px solid #ccc;
+    width: 75%;
+    cursor: pointer;
+}
+
+#lista ul li a{
+    text-decoration: none;
+    font-family: 'TrebuchetMS';
+    font-size: 30px;
+    color: #37BCF9;
+    transition: all 400ms;
+    
+}
+
+                    #lista ul li:hover a{
+                        color: white;
+                    }
+
+                    #lista ul li:hover{
+                        transform: scale(1.2,1.2);
+                        margin-left: 40px;
+                    }
+
+                    #lista ul:hover{ 
+                        color: #37BCF9;
+                    }
+
+/* Fin Estilos de la lista*/
+
+
+/* Estilos de la caja del mapa*/
+#mapa iframe{
+    width: 100%;
+    height: 305px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+
+/* Estilos de las IMAGENES  android, google etc..*/
+ #images img{
+    width: 49px;
+}
+
+/* Margen de las imagenes*/
+#datos img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del span del autor*/
+#autor span{
+    display: block;
+    margin-top: 7px;
+    color: white;
+    font-family: 'TrebuchetMS';
+}
+
+
+
+
+
+
+
+
+/*
+#header{
+    width: 100%;
+    height: 70px;
+}
+
+.wrap{
+    width: 1500px;
+    height: 70px;
+    margin: 0px auto;
+    background-color: black;
+    color: white;
+    font-family: 'BebasNeue';
+    letter-spacing: 1px;
+   
+}
+
+.wrap #logo{
+    width: 200px;
+    height: 50px;
+    background-color: #37bcf9 ;
+    float: left;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 180px;
+}
+
+#logo span{
+    font-size: 30px;
+    float: left;
+    line-height: 46px;
+    margin-left: 20px;
+}
+
+#logo h3{
+    width: 150px;
+    margin: 0px auto;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-right: 45px;
+    height: 40px
+    
+   
+}
+
+.wrap #nav{
+    float: left;
+    width: 650px;
+    margin-left: 388px;
+    height: 70px;
+    
+    
+}
+
+#nav ul{
+    list-style: none;
+    width: 95%;
+    margin: 0px auto;
+    height: 70px;
+    
+
+}
+
+#nav > ul > li{
+    line-height: 55px;
+    float: left;
+    text-align: center;
+    padding: 5px;
+    margin-right: 35px;
+    
+    
+}
+
+.wrap #nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+   
+}
+
+*/
+
+
+
+/*
+
+
+#logo{
+    display: block;
+    width: 13%;
+    height: 53px;
+    background: #37bcf9;
+    
+}
+
+#logo span{
+    color:white;
+}
+
+
+*/
